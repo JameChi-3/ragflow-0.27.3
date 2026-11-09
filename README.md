@@ -77,6 +77,10 @@
 
 [RAGFlow](https://ragflow.io/) is a leading open-source Retrieval-Augmented Generation ([RAG](https://ragflow.io/basics/what-is-rag)) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs. It offers a streamlined RAG workflow adaptable to enterprises of any scale. Powered by a converged [context engine](https://ragflow.io/basics/what-is-agent-context-engine) and pre-built agent templates, RAGFlow enables developers to transform complex data into high-fidelity, production-ready AI systems with exceptional efficiency and precision.
 
+## MyNotes
+
+[notebook](./mynotes/readme.md)
+
 ## 🎮 Get Started
 
 Try our cloud service at [https://cloud.ragflow.io](https://cloud.ragflow.io).
