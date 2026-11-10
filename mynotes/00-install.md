@@ -5,6 +5,8 @@
 
 [本地安装参考](../README.md#-launch-service-from-source-for-development)
 
+## 本地安装
+
 **具体步骤**:
 
 > [!IMPORTANT]
@@ -90,17 +92,3 @@
    unzip -oq /tmp/punkt_tab.zip -d ~/nltk_data/tokenizers/
    ```
 
-
-## 网页端配置
-
-### llm api
-
-deepseek
-
-### embedding model
-
-ollama
-
-### rerank model
-
-<!-- TODO 未来急需要部署 -->

@@ -79,7 +79,8 @@
 
 ## MyNotes
 
-[notebook](./mynotes/readme.md)
+[github_repo url](https://github.com/infiniflow/ragflow/tree/v0.27.3)
+[my notebooks](./mynotes/readme.md)
 
 ## 🎮 Get Started
 

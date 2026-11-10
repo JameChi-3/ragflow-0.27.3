@@ -334,8 +334,10 @@ if [[ "$START_RAGFLOW" -eq 1 ]]; then
   # package at all, and letting both sides create tables makes them fight over
   # the same schema.
   if [[ "${API_PROXY_SCHEME}" != "go" ]]; then
+    echo "------------ start ensure_db_init"
     ensure_db_init
   fi
+  echo "------------ start run_migrations"
   run_migrations
 fi
 
@@ -343,6 +345,7 @@ fi
 if [[ "$START_TASK_EXECUTOR" -eq 1 ]]; then
   for ((i=0;i<WS;i++))
   do
+    echo "------------ start task_exe"
     task_exe "$i" &
     PIDS+=($!)
   done
@@ -350,18 +353,21 @@ fi
 
 # Start the RAGFlow server
 if [[ "$START_RAGFLOW" -eq 1 ]]; then
+  echo "------------ start run_server"
   run_server &
   PIDS+=($!)
 fi
 
 # Start the Admin server
 if [[ "$START_ADMIN" -eq 1 ]]; then
+  echo "------------ start run_admin_server"
   run_admin_server &
   PIDS+=($!)
 fi
 
 # Start the data sync server
 if [[ "$START_DATA_SYNC" -eq 1 ]]; then
+  echo "------------ start run_data_sync"
   run_data_sync &
   PIDS+=($!)
 fi
