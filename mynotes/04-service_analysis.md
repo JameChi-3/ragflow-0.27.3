@@ -24,4 +24,9 @@ bash docker/launch_backend_service.sh
 
 任务处理调度程序调用到具体的任务处理函数的架构说明[task_executor_refactoring_plan.md](../rag/svr/task_executor_refactor/task_executor_refactoring_plan.md)
 
-<!-- TODO 通过上述的文档，找出真实的调用处理逻辑，进行单独的评测 -->
+<!---------------------------
+TODO 通过上述的文档，找出真实的调用处理逻辑，进行单独的评测，
+评测的逻辑在ChatGPT讨论过，关注的项目
+- `rag_benchmark_eval_cmp`
+- `🤖🧪agent_experiment`
+------------------------>
